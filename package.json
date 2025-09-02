@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node ./.dist/server.js",
-    "dev": "nodemon --watch api --exec tsx ./api/server.ts",
+    "dev": "nodemon --watch src --exec tsx ./src/server.ts",
     "build": "tsc",
     "postinstall": "prisma generate"
   },
