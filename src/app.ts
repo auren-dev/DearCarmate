@@ -13,17 +13,7 @@ import imageUploadRouter from './routes/imageUploadRoute';
 import contractDocumentRouter from './routes/contractDocumentRoute';
 import carRouter from './routes/carRoute';
 
-import fs from 'fs';
-
 dotenv.config();
-
-const isServerless = !!process.env.VERCEL;
-const PUBLIC_DIR = isServerless ? '/tmp/public' : path.resolve('public');
-const DOC_DIR = isServerless ? '/tmp/document' : path.resolve('document');
-if (!isServerless) {
-    fs.mkdirSync(PUBLIC_DIR, { recursive: true });
-    fs.mkdirSync(DOC_DIR, { recursive: true });
-}
 
 const app: Express = express();
 
