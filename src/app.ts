@@ -48,4 +48,4 @@ app.use('/contractDocuments', express.static(path.resolve('document')));
 
 app.use(errorHandler);
 
-export default app;
+app.listen(process.env.PORT || 3000, () => console.log('Server Starting...'));
