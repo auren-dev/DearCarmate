@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "routes": [
+        {
+            "src": "^/api/ping$",
+            "dest": "/api/ping.ts"
+        },
+        {
+            "src": "^/api/(.*)$",
+            "dest": "/api/index.ts"
+        },
+        {
+            "src": "^(?!/api/).*",
+            "dest": "/api/index.ts"
+        }
+    ]
+}
