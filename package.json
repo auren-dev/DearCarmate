@@ -5,8 +5,8 @@
   "main": "app.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node ./.dist/app.js",
-    "dev": "nodemon --watch src --exec tsx ./src/app.ts",
+    "start": "node ./.dist/server.js",
+    "dev": "nodemon --watch src --exec tsx ./src/server.ts",
     "build": "tsc"
   },
   "prisma": {
